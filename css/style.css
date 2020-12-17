@@ -64,7 +64,6 @@ button {
 
 img {
   width: 45vw;
-  align-self: center;
   transform: translate(0, -10%);
 }
 /* Image */
@@ -142,6 +141,7 @@ li:hover::after {
     background-color: white;
     transform: translate(-1rem, -1rem);
 }
+/* Order Button */
 
 
 /* Modal */ 
@@ -161,7 +161,7 @@ li:hover::after {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -182,7 +182,7 @@ li:hover::after {
   cursor: pointer;
 }
 
-.btn-outline-white {
-	color: #CD2128 !important;
-	text-transform: lowercase;
+
+.iframe_wrapper {
+	justify-content: center;
 }
