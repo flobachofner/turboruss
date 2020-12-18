@@ -77,6 +77,12 @@ img {
     } 
 }
 
+@media screen and (max-width: 550px) {   
+    img{
+    	width: 55vw;
+    } 
+}
+
 
 /* Image */
 
