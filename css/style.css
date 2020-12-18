@@ -1,5 +1,11 @@
 /* CSS Document */
 
+@font-face {
+  font-family: 'kurbanistika';
+  src: url('../fonts/kurbanistika.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
 body {
 	background-color: #CD2128;
 	margin: 0;
@@ -92,11 +98,44 @@ img {
     	width: 55vw;
     } 
 }
-
-
 /* Image */
 
+/* Info Text */
+.title_wrapper {
+	position: fixed;
+	top: 3%;
+	right: 50%;
+	transform: translate(50%, 0);
+	color: #EBE4D9;
+	text-align: center;
+}
 
+.info_wrapper {
+	position: fixed;
+	bottom: 21%;
+	right: 50%;
+	transform: translate(50%, 0);
+	color: #EBE4D9;
+	text-align: center;
+}
+
+.title_wrapper>h2 {
+	font-size: 42px;
+}
+
+.info_wrapper>p {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 550px) {   
+    .title_wrapper>h2 {
+		font-size: 26px;
+	}
+	.info_wrapper>p {
+		font-size: 14px;
+	}
+}/* Info Text */
 
 
 /* Order Button */
@@ -116,20 +155,21 @@ ul {
 li {
     width: 10rem;
     height: 4rem;
-    font-size: 16px;
+    font-size: 14px;
+	font-weight: 700;
     text-align: center;
     line-height: 4rem;
     font-family: sans-serif;
     letter-spacing: 2px;
     position: relative;
     transition: 0.3s;
-	border: 3px solid black;
+	border: 3px solid #262626;
 	box-sizing: content-box;
 	background-color: #EBE4D9;
 }
 
 li>a {
-	color: #000;
+	color: #262626;
 }
 
 li::before, li::after {
@@ -152,12 +192,12 @@ li::after {
     background-color: #FDB515;
     transform: translate(1rem, 1rem);
     z-index: -2;
-	border: 3px solid black;
+	border: 3px solid #262626;
 }
 
 li:hover {
     transform: translate(1rem, 1rem);
-    color: white;
+    color: #EBE4D9;
 	background-color: #EBE4D9;
 }
 
