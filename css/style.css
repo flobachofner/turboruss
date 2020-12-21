@@ -6,7 +6,12 @@
 }
 
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
+	position: relative;
 	background-color: #CD2128;
 	margin: 0;
 	font-family: futura-pt, sans-serif;
@@ -93,7 +98,10 @@ img {
     } 
 }
 
-@media screen and (max-width: 550px) {   
+@media screen and (max-width: 550px) {
+	.title_wrapper, .info_wrapper {
+		visibility: hidden;
+	}
     img{
     	width: 55vw;
     } 
