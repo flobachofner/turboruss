@@ -89,8 +89,8 @@ button {
 }
 
 img {
-  width: 45vw;
-  transform: translate(0, -10%);
+  width: 42vw;
+  transform: translate(0, -7%);
 }
 
 @media screen and (max-width: 1000px) {   
@@ -112,7 +112,7 @@ img {
 /* Info Text */
 .title_wrapper {
 	position: fixed;
-	top: 3%;
+	top: 2%;
 	right: 50%;
 	transform: translate(50%, 0);
 	color: #EBE4D9;
@@ -121,7 +121,7 @@ img {
 
 .info_wrapper {
 	position: fixed;
-	bottom: 21%;
+	bottom: 18%;
 	right: 50%;
 	transform: translate(50%, 0);
 	color: #EBE4D9;
