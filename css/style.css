@@ -19,10 +19,10 @@ html, body {
 }
 
 body {
-	background-color: #CD2128;
+	background-color: #cc2027;
 	margin: 0;
 	font-family: "Funkturm";
-	color: #EEE4D9;
+	color: #ede3d9;
 	font-weight: 100 !important;
 	letter-spacing: 2px;
 	line-height: 20px;
@@ -36,16 +36,12 @@ h2, h3 {
 
 strong {
 	font-weight: 100;
-	color: #fdb614;
+	color: #fcb515;
 }
 
 a {
-	color: #EEE4D9;
+	color: #ede3d9;
 	text-decoration: none;
-}
-
-a:hover {
-	color: #a8a8a8;
 }
 
 p {
@@ -83,9 +79,13 @@ p {
 	align-items: center;
 	justify-content: space-around;
 }
-img {
+#logo {
     width: 35vw;
 	margin-top: 10vh;
+}
+
+#bottle {
+	width: 40vw;
 }
 
 @media screen and (max-width: 1000px) {   
