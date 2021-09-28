@@ -5,6 +5,14 @@
 	src: url('../fonts/funkturm.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: 'Funkturm';
+  src: url('../fonts/funkturm.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/funkturm.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/funkturm.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/funkturm.svg#funkturm') format('svg'); /* Legacy iOS */
+}
+
 
 html, body {
 	overflow-x: hidden;
