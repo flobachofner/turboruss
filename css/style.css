@@ -62,7 +62,7 @@ i {
 
 /* Socials */
 .social_wrapper {
-	position: relative;
+	position: absolute;
 	top: 6%;
 	left: 5%;
 	transition: transform .6s;
