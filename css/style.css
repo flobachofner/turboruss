@@ -1,13 +1,4 @@
-/* CSS Document */
-/*@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@700&display=swap');*/
 
-@font-face {
-  font-family: 'Funkturm';/*
-  src: url('../fonts/funkturm.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/funkturm.ttf')  format('truetype'), /* Safari, Android, iOS */
-	   url('../fonts/funkturm.woff') format('woff'); /* Pretty Modern Browsers 
-       url('../fonts/funkturm.svg#funkturm') format('svg'); /* Legacy iOS */
-}
 
 html, body {
 	overflow-x: hidden;
@@ -22,18 +13,24 @@ body {
 	font-weight: 900;
 	*/
 	
-	font-family: "Funkturm";
+	font-family: source-sans-pro,sans-serif;
+	font-weight: 900;
+	font-style: normal;
 	
 	color: #ede3d9;
 	letter-spacing: 2px;
-	line-height: 20px;
+	line-height: 1;
 	text-align: center;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
-h2, h3 {
+h2 {
+	font-size: 30px;
 	margin: 10vh 0 4vh 0;
-	font-weight: 100;
+}
+
+h3 {
+	margin: 10vh 0 4vh 0;
 }
 
 strong {
@@ -47,7 +44,6 @@ a {
 
 p {
 	margin: 5vh 0 5vh 0;
-	font-weight: 100;
 }
 
 i {
@@ -85,9 +81,15 @@ i {
 	align-items: center;
 	justify-content: space-around;
 }
+
 #logo {
-    width: 35vw;
+    width: 45vw;
 	margin-top: 10vh;
+}
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 75vw;
+  }
 }
 
 #bottle {
