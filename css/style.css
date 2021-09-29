@@ -62,13 +62,14 @@ i {
 
 /* Socials */
 .social_wrapper {
+	height: 100%;
 	position: fixed;
 	top: 6%;
 	left: 5%;
 	transition: transform .6s;
 }
 .social_wrapper:hover {
-	transform: scale(1.2);
+	/*transform: scale(1.2);*/
 }
 
 
