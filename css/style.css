@@ -65,8 +65,8 @@ i {
 /* Socials */
 .social_wrapper {
 	position: fixed;
-	top: 6%;
-	left: 5%;
+	top: 12%;
+	right: 5%;
 	transition: transform .6s;
 }
 .social_wrapper:hover {
