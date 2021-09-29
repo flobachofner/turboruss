@@ -62,20 +62,18 @@ i {
 
 /* Socials */
 .social_wrapper {
-	height: 100%;
-	position: fixed;
+	position: relative;
 	top: 6%;
 	left: 5%;
 	transition: transform .6s;
 }
 .social_wrapper:hover {
-	/*transform: scale(1.2);*/
+	transform: scale(1.2);
 }
 
 
 /* Image */
 .page_wrapper {
-	flex: 1 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
