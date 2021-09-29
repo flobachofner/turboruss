@@ -50,6 +50,10 @@ p {
 	font-weight: 100;
 }
 
+i {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
 /* Language Button */
 .language_wrapper {
 	position: fixed;
