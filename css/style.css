@@ -17,6 +17,10 @@ body {
 	text-transform: uppercase;
 }
 
+section {
+	padding: 0 2vw 0 2vw;
+}
+
 h2 {
 	font-size: 30px;
 	margin: 10vh 0 4vh 0;
@@ -47,7 +51,6 @@ i {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 
-
 /* Language Button */
 .language_wrapper {
 	position: fixed;
@@ -61,13 +64,24 @@ i {
 
 
 /* Socials */
-.social_wrapper {
+.ig_wrapper {
 	position: absolute;
 	top: 6%;
 	left: 5%;
 	transition: transform .6s;
 }
-.social_wrapper:hover {
+.ig_wrapper:hover {
+	transform: scale(1.2);
+}
+.socials_wrapper {
+	margin-top: 10vh;
+}
+.social-icon {
+	font-size: 22px;
+	padding: 5vh 5vw 5vh 5vw;
+	transition: transform .6s;
+}
+.social-icon:hover {
 	transform: scale(1.2);
 }
 
