@@ -23,7 +23,7 @@ section {
 
 h2 {
 	font-size: 30px;
-	margin: 10vh 0 4vh 0;
+	margin: 3vh 0 9vh 0;
 }
 
 h3 {
@@ -95,8 +95,8 @@ i {
 }
 
 #logo {
-    width: 45vw;
-	margin-top: 10vh;
+    width: 80vh;
+	margin-top: 7vh;
 }
 @media screen and (max-width: 600px) {
   #logo {
