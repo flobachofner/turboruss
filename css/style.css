@@ -183,8 +183,9 @@ h5 {
 
 .openButton {
 	border: 2px solid #EDE3D9;
-	padding: 10px 20px;
+	padding: 10px 38px;
 	transition: color 0.3s;
+	font-size: 22px;
 }
 
 .openButton:hover {
