@@ -125,11 +125,15 @@ i {
 	padding-top: 15vh;
 }
 
-
-
 /* The Modal (background) */
 h5 {
-	font-size: 60px;
+	font-size: 5vw;
+}
+
+@media only screen and (max-width: 800px) {
+	h5 {
+	font-size: 10vw;
+}
 }
 
 .modal {
