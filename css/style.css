@@ -85,6 +85,28 @@ i {
 	transform: scale(1.2);
 }
 
+/* MiZ Logo */
+.madeinzurich_wrapper {
+	position: fixed;
+	bottom: 6%;
+	right: 5%;
+}
+
+.madeinzurich_logo {
+	height: 100px;
+	transition: transform .6s;
+}
+
+.madeinzurich_logo:hover {
+	transform: scale(1.2);
+}
+
+@media screen and (max-width: 570px) {
+  .madeinzurich_logo {
+    visibility: hidden;
+  }
+}
+
 
 /* Image */
 .page_wrapper {
