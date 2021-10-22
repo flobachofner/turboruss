@@ -26,10 +26,6 @@ h2 {
 	margin: 3vh 0 9vh 0;
 }
 
-h3 {
-	margin: 10vh 0 4vh 0;
-}
-
 strong {
 	color: #fcb515;
 }
@@ -145,7 +141,51 @@ i {
 /* Text */
 #info {
 	padding-top: 15vh;
+	margin: 10vh 0 4vh 0;
 }
+
+
+
+
+
+/* Map */
+.map-wrapper {
+	margin-bottom: 10vh;
+}
+
+#map {
+	height: 80vh;
+	width: 60vw;
+}
+
+#map-title {
+	margin-top: 0;
+}
+
+.map-border {
+	height: 97.4%;
+	border: 8px solid #EDE3D9;
+}
+
+.map-border-black-out {
+	border: 4px solid #262626;
+}
+
+.map-border-black-in {
+	height: 93.8%;
+	border: 4px solid #262626;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	padding: 15px;
+}
+
+
+
+
+
+
+
 
 /* The Modal (background) */
 h5 {
@@ -206,7 +246,7 @@ h5 {
 }
 
 .modal-text {
-	height: 25vh;
+	height: 15vh;
 }
 
 .modal-buttons {

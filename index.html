@@ -17,6 +17,9 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
+  <!-- Google Map API -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-98Y0WZYSYY"></script>
   <script>
@@ -50,11 +53,7 @@
 		 </div>
 		
 		<section class="page_wrapper">
-			
-			<div class="map">
-				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAAp6RDfKobq4-eLJLHO9G7hKkt3lrvKI&callback=initMap&v=weekly" async></script>
-			</div>
-			
+						
 			<picture>
 				<img src="img/title_de.svg" id="logo" alt="logo_de">
 			</picture>			
@@ -94,13 +93,24 @@
 			
 			<img src="img/bottle.png" alt="Flasche" id="bottle">
 			
+			<div class="map-wrapper">
+				<div class="map-border-black-out">
+				  <div class="map-border">
+					<div class="map-border-black-in">
+						<h3 id="map-title">Unsere Verkaufsstandorte</h3>
+						<div id="map"></div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			
 		</section>
 		
 
-		<!-- The Modal --
+		<!-- The Modal -->
 		<div id="myModal" class="modal">
 
-		  <!-- Modal content --
+		  <!-- Modal content -->
 		  <div class="modal-content">
 			  <div class="modal-border-black-out">
 			  <div class="modal-border">
@@ -116,13 +126,15 @@
 		    </div>
 		  </div>
 
-		</div>-->
+		</div>
 		
 
 	</main>
 		
 </body>
-	
+
+<!-- Init Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAAp6RDfKobq4-eLJLHO9G7hKkt3lrvKI&callback=initMap&v=weekly" async></script>
 <!-- Custom JavaScript -->
 <script src="js/script.js"></script>
 		

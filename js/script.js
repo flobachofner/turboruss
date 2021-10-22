@@ -1,6 +1,30 @@
 // JavaScript Document
 
 
+// Add Map
+function initMap() {
+  new google.maps.Map(document.getElementById("map"), {
+    mapId: "923884f072e6e724",
+    center: { lat: 47.3849725, lng: 8.5353119 },
+    zoom: 12,
+	streetViewControl: false,
+	mapTypeControl: false,
+  });
+	
+  new google.maps.Marker({
+	  position: { lat: 47.3849725, lng: 8.5353119 },
+	  map,
+	  title: "Coming soon!",
+	  icon: {
+		  url: "img/favicon.svg",
+		  scaledSize: new google.maps.Size(40, 40)
+	  },
+	  animation: google.maps.Animation.DROP
+  });
+	
+}
+
+
 // Scroll smoothly
 $(function() {
 	$('a[href*=\\#]:not([href=\\#])').on('click', function() {
