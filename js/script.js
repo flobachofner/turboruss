@@ -1,9 +1,16 @@
 // JavaScript Document
 
+
+function getBaseUrl() {
+    var re = new RegExp(/^.*\//);
+    return re.exec(window.location.href);
+}
+
 ///////////////////
 // TURBORUSS Map //
 ///////////////////
 function initMap() {
+
   const map = new google.maps.Map(document.getElementById("map"), {
     mapId: "923884f072e6e724",
     center: { lat: 47.3849725, lng: 8.5353119 },
@@ -11,53 +18,60 @@ function initMap() {
 	streetViewControl: false,
 	mapTypeControl: false,
   });
-	
-  const iconBase =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+  
+  const baseURL = getBaseUrl();	
+  const iconBase = "/img/map_icons/";
 	
   const icons = {
     production: {
-      icon: iconBase + "parking_lot_maps.png",
+      icon: baseURL + iconBase + "production.png",
     },
     seller: {
-      icon: iconBase + "library_maps.png",
+      icon: baseURL + iconBase + "seller.png",
+    },
+	seller_distributor: {
+      icon: baseURL + iconBase + "seller-distributor.png",
     },
     distributor: {
-      icon: iconBase + "info-i_maps.png",
+      icon: baseURL + iconBase + "distributor.png",
     },
   };
 	
-  const features = [
+  const features = [/*
     {
       position: new google.maps.LatLng(47.417494, 8.5573861),
       type: "production",
-	  name: "Brauerei Oerlikon"
+	  name: "Brauerei Oerlikon",
+	  scaledSize: new google.maps.Size(10, 10),
     },
 	{
       position: new google.maps.LatLng(47.4116522, 8.5412326),
       type: "seller",
-	  name: "Drinks of the World Oerlikon"
-    },
+	  name: "Drinks of the World Oerlikon",
+	  scaledSize: new google.maps.Size(10, 10),
+    },*/
     {
       position: new google.maps.LatLng(47.3697419, 8.5423319),
       type: "distributor",
-	  name: "Karl der Grosse"
+	  name: "Karl der Grosse",
     },
 	{
       position: new google.maps.LatLng(47.3791612, 8.5423464),
       type: "distributor",
-	  name: "Kleine Freiheit"
-    },
+	  name: "Kleine Freiheit",
+    },/*
 	{
       position: new google.maps.LatLng(47.3762496, 8.5447811),
       type: "distributor",
-	  name: "bQm"
+	  name: "bQm",
+	  scaledSize: new google.maps.Size(10, 10),
     },
 	{
       position: new google.maps.LatLng(47.4981776, 8.7292063),
       type: "distributor",
-	  name: "Zum hinteren Hecht"
-    },
+	  name: "Zum hinteren Hecht",
+	  scaledSize: new google.maps.Size(10, 10),
+    },*/
   ];
 
   // Create markers
@@ -69,7 +83,12 @@ function initMap() {
 	
     let marker = new google.maps.Marker({
       position: features[i].position,
-      icon: icons[features[i].type].icon,
+	  icon: {
+   		url: icons[features[i].type].icon,
+	    size: new google.maps.Size(50, 50),
+	    scaledSize: new google.maps.Size(50, 50),
+	    anchor: new google.maps.Point(0, 0)
+	  },
       map: map,
     });
 	
