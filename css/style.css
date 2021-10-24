@@ -200,7 +200,27 @@ i {
 	padding: 3px;
 }
 
+.popup-wrapper {
+	font-family: source-sans-pro,sans-serif;
+	color: #262626;
+	height: auto;
+	overflow: hidden;
+}
 
+.popup-content {
+	color: #9A9A9A;
+}
+
+.popup-link {
+	color: #fcb515;
+	padding: 10px 38px;
+	transition: color 0.3s;
+	font-size: 14px;
+}
+
+.popup-link:hover {
+	color: #CC2027;
+}
 
 
 

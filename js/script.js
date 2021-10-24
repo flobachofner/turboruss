@@ -50,6 +50,8 @@ function initMap() {
       position: new google.maps.LatLng(47.418643451116985, 8.558690905968334),
       type: "production",
 	  name: "Brauerei Oerlikon",
+	  text: "Die Brauerein in Oerlikon ist die Geburtsstätte vom Igor TURBORUSS. This is where the magic happens...",
+	  link: "https://brauerei-oerlikon.ch"
     },/*
 	{
       position: new google.maps.LatLng(47.4116522, 8.5412326),
@@ -63,9 +65,11 @@ function initMap() {
 	  name: "Karl der Grosse",
     },*/
 	{
-      position: new google.maps.LatLng(47.3791612, 8.5423464),
+      position: new google.maps.LatLng(47.379170731925306, 8.544534830022993),
       type: "distributor",
 	  name: "Kleine Freiheit",
+	  text: "Die Kleine Freiheit ist der perfekte Ort, um nach einem langen Tag an der Uni abzuschalten!",
+	  link: "https://kleinefreiheit.ch/"
     },/*
 	{
       position: new google.maps.LatLng(47.3762496, 8.5447811),
@@ -84,8 +88,16 @@ function initMap() {
   // Create markers
   for (let i = 0; i < features.length; i++) {
 	  
+	let contentString =
+	'<div class="popup-wrapper">' +
+    '<h1 class="popup-header">'+ features[i].name +'</h1>' +
+    '<div class="popup-content"><p>' + features[i].text +
+    '</p><a class="popup-link" target="_blank" href='+ features[i].link +'>Weitere Infos</a> ' +
+    "</div>" +
+    "</div>";
+	  
     let infowindow = new google.maps.InfoWindow({
-      content: features[i].name,
+      content: contentString,
     });
 	
     let marker = new google.maps.Marker({
