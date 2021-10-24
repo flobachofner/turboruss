@@ -1,6 +1,5 @@
 // JavaScript Document
 
-
 function getBaseUrl() {
     var re = new RegExp(/^.*\//);
     return re.exec(window.location.href);
@@ -13,8 +12,8 @@ function initMap() {
 
   const map = new google.maps.Map(document.getElementById("map"), {
     mapId: "923884f072e6e724",
-    center: { lat: 47.3849725, lng: 8.5353119 },
-    zoom: 12,
+    center: { lat: 47.3749725, lng: 8.5343119 },
+    zoom: 13,
 	streetViewControl: false,
 	mapTypeControl: false,
   });
@@ -24,37 +23,45 @@ function initMap() {
 	
   const icons = {
     production: {
+	  name: "Produktion",
       icon: baseURL + iconBase + "production.png",
+      legend: baseURL + iconBase + "icon-production.png",
     },
     seller: {
+	  name: "Verkauf",
       icon: baseURL + iconBase + "seller.png",
+	  legend: baseURL + iconBase + "icon-seller.png",
+    },
+	distributor: {
+	  name: "Ausschank",
+      icon: baseURL + iconBase + "distributor.png",
+	  legend: baseURL + iconBase + "icon-distributor.png",
     },
 	seller_distributor: {
+	  name: "Beides",
       icon: baseURL + iconBase + "seller-distributor.png",
+	  legend: baseURL + iconBase + "icon-seller-distributor.png",
     },
-    distributor: {
-      icon: baseURL + iconBase + "distributor.png",
-    },
+    
   };
 	
-  const features = [/*
+  const features = [
     {
-      position: new google.maps.LatLng(47.417494, 8.5573861),
+      position: new google.maps.LatLng(47.418643451116985, 8.558690905968334),
       type: "production",
 	  name: "Brauerei Oerlikon",
-	  scaledSize: new google.maps.Size(10, 10),
-    },
+    },/*
 	{
       position: new google.maps.LatLng(47.4116522, 8.5412326),
       type: "seller",
 	  name: "Drinks of the World Oerlikon",
 	  scaledSize: new google.maps.Size(10, 10),
-    },*/
-    {
-      position: new google.maps.LatLng(47.3697419, 8.5423319),
-      type: "distributor",
-	  name: "Karl der Grosse",
     },
+    {
+      position: new google.maps.LatLng(47.369608, 8.5442944),
+      type: "seller_distributor",
+	  name: "Karl der Grosse",
+    },*/
 	{
       position: new google.maps.LatLng(47.3791612, 8.5423464),
       type: "distributor",
@@ -85,9 +92,10 @@ function initMap() {
       position: features[i].position,
 	  icon: {
    		url: icons[features[i].type].icon,
-	    size: new google.maps.Size(50, 50),
-	    scaledSize: new google.maps.Size(50, 50),
-	    anchor: new google.maps.Point(0, 0)
+	    size: new google.maps.Size(128, 128),
+	    scaledSize: new google.maps.Size(128, 128),
+		origin: new google.maps.Point(0, 0),
+	    anchor: new google.maps.Point(64, 95)
 	  },
       map: map,
     });
@@ -100,6 +108,22 @@ function initMap() {
       });
     });
   }
+	
+	
+  // Add Legend
+  const legend = document.getElementById("legend");
+
+  for (const key in icons) {
+    const type = icons[key];
+    const name = type.name;
+    const icon = type.legend;
+    const div = document.createElement("div");
+	  	  
+    div.innerHTML = '<img src="' + icon + '" > ' + name;
+    legend.appendChild(div);
+  }
+
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
 }
 
 
