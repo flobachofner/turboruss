@@ -13,7 +13,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     mapId: "923884f072e6e724",
     center: { lat: 47.3749725, lng: 8.5343119 },
-    zoom: 13,
+    zoom: 12,
 	streetViewControl: false,
 	mapTypeControl: false,
   });
@@ -63,14 +63,14 @@ function initMap() {
       position: new google.maps.LatLng(47.369608, 8.5442944),
       type: "seller_distributor",
 	  name: "Karl der Grosse",
-    },*/
+    },
 	{
       position: new google.maps.LatLng(47.379170731925306, 8.544534830022993),
       type: "distributor",
 	  name: "Kleine Freiheit",
 	  text: "Die Kleine Freiheit ist der perfekte Ort, um nach einem langen Tag an der Uni abzuschalten!",
 	  link: "https://kleinefreiheit.ch/"
-    },/*
+    },
 	{
       position: new google.maps.LatLng(47.3762496, 8.5447811),
       type: "distributor",

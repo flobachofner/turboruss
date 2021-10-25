@@ -53,24 +53,34 @@ i {
 	top: 6%;
 	right: 5%;
 	transition: transform .6s;
+	z-index: 1;
+	background-color: #CC2027;
+	padding: 5px 10px;
 }
 .language_wrapper:hover {
 	transform: scale(1.1);
 }
 
 
-/* Socials */
-.ig_wrapper {
-	position: absolute;
+/* Shop */ 
+.shop_wrapper {
+	position: fixed;
 	top: 6%;
 	left: 5%;
+	border: 2px solid #F2E9E1;
+	padding: 5px 10px;
+	background-color: #CC2027;
 	transition: transform .6s;
+	z-index: 1;
 }
-.ig_wrapper:hover {
+.shop_wrapper:hover {
 	transform: scale(1.2);
 }
+
+
+/* Socials */
 .socials_wrapper {
-	margin-top: 10vh;
+	margin-bottom: 5vh;
 }
 .social-icon {
 	font-size: 22px;
@@ -84,8 +94,11 @@ i {
 /* MiZ Logo */
 .madeinzurich_wrapper {
 	position: fixed;
+	padding: 5px 10px;
+	background-color: #CC2027;
 	bottom: 6%;
 	right: 5%;
+	z-index: 1;
 }
 
 .madeinzurich_logo {
@@ -97,8 +110,8 @@ i {
 	transform: scale(1.1);
 }
 
-@media screen and (max-width: 570px) {
-  .madeinzurich_logo {
+@media screen and (max-width: 700px) {
+  .madeinzurich_wrapper {
     visibility: hidden;
   }
 }
@@ -157,7 +170,7 @@ i {
 }
 
 #map-title {
-	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .map-border {
