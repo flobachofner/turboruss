@@ -63,14 +63,14 @@ function initMap() {
       position: new google.maps.LatLng(47.369608, 8.5442944),
       type: "seller_distributor",
 	  name: "Karl der Grosse",
-    },
+    },*/
 	{
       position: new google.maps.LatLng(47.379170731925306, 8.544534830022993),
       type: "distributor",
 	  name: "Kleine Freiheit",
-	  text: "Die Kleine Freiheit ist der perfekte Ort, um nach einem langen Tag an der Uni abzuschalten!",
+	  text: "Die Kleine Freiheit ist der perfekte Ort, um nach einem langen Tag an der Uni mit einer heissen Tasse Igor TURBORUSS die nächste Abgabefrist für ein paar Stunden auszublenden.",
 	  link: "https://kleinefreiheit.ch/"
-    },
+    },/*
 	{
       position: new google.maps.LatLng(47.3762496, 8.5447811),
       type: "distributor",
