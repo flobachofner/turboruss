@@ -50,7 +50,7 @@ function initMap() {
       position: new google.maps.LatLng(47.418643451116985, 8.558690905968334),
       type: "production",
 	  name: "Brauerei Oerlikon",
-	  text: "Die Brauerei Oerlikon ist die Geburtsstätte von Igor TURBORUSS. This is where the magic happens...",
+	  text: "Die Brauerei Oerlikon ist die Geburtsstätte von Igor TURBORUSS. This is where the magic happens...<br><br>Hier kannst du jederzeit auch Flaschen in grossen Mengen direkt ab Lager kaufen!",
 	  link: "https://brauerei-oerlikon.ch"
     },/*
 	{
