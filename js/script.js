@@ -13,7 +13,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     mapId: "923884f072e6e724",
     center: { lat: 47.3749725, lng: 8.5343119 },
-    zoom: 12,
+    zoom: 13,
 	streetViewControl: false,
 	mapTypeControl: false,
   });
@@ -70,13 +70,14 @@ function initMap() {
 	  name: "Kleine Freiheit",
 	  text: "Die Kleine Freiheit ist der perfekte Ort, um nach einem langen Tag an der Uni mit einer heissen Tasse Igor TURBORUSS die nächste Abgabefrist für ein paar Stunden auszublenden.",
 	  link: "https://kleinefreiheit.ch/"
-    },/*
-	{
-      position: new google.maps.LatLng(47.3762496, 8.5447811),
-      type: "distributor",
-	  name: "bQm",
-	  scaledSize: new google.maps.Size(10, 10),
     },
+	{
+      position: new google.maps.LatLng(47.37609990248077, 8.54672287389409),
+      type: "seller_distributor",
+	  name: "bQm",
+	  text: "Bist du nach einer seeeeehr langen Uni-Woche (Mo-Do, 5 VL, 3 davon besucht) komplett ausgelaugt und brauchst etwas wohlig warmes?",
+	  link: "https://www.bqm-bar.ch/de/"
+    },/*
 	{
       position: new google.maps.LatLng(47.4981776, 8.7292063),
       type: "distributor",
