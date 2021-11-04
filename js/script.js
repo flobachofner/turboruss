@@ -72,11 +72,25 @@ function initMap() {
 	  link: "https://kleinefreiheit.ch/"
     },
 	{
+      position: new google.maps.LatLng(47.480003085165364, 8.300914432537645),
+      type: "distributor",
+	  name: "Werkk Kulturlokal Baden",
+	  text: "Du magst Metal und Igor TURBORUSS? <br>Dann bist du jeden Montag im Werkk am Metal Monday genau richtig!",
+	  link: "https://www.metalmonday.ch/"
+    },
+	{
       position: new google.maps.LatLng(47.37609990248077, 8.54672287389409),
       type: "seller_distributor",
 	  name: "bQm",
 	  text: "Bist du nach einer seeeeehr langen Uni-Woche (Mo-Do, 5 VL, 3 davon besucht) komplett ausgelaugt und brauchst etwas wohlig warmes?",
 	  link: "https://www.bqm-bar.ch/de/"
+    },
+	{
+      position: new google.maps.LatLng(47.37274151062592, 8.543627342936118),
+      type: "seller",
+	  name: "Berg und Tal",
+	  text: "Suchst du lokale Spezialitäten<br>Oder neue kulinarische Raritäten<br>Ist das Lädeli Berg und Tal<br>Logischerweise die erste Wahl<br><br>Und dort kannst du nun ganz neu<br>Kaufen unser Wintergebräu<br>Nein, es ist nicht Kafi mit Schuss<br>Sondern Igor TURBORUSS!",
+	  link: "https://www.berg-tal.ch/"
     },/*
 	{
       position: new google.maps.LatLng(47.4981776, 8.7292063),
