@@ -50,7 +50,7 @@ function initMap() {
       position: new google.maps.LatLng(47.418643451116985, 8.558690905968334),
       type: "production",
 	  name: "Brauerei Oerlikon",
-	  text: "Die Brauerei Oerlikon ist die Geburtsstätte von Igor TURBORUSS. This is where the magic happens...",
+	  text: "Die Brauerei Oerlikon ist die Geburtsstätte von Igor TURBORUSS. This is where the magic happens...<br><br>Hier kannst du jederzeit auch Flaschen in grossen Mengen direkt ab Lager kaufen!",
 	  link: "https://brauerei-oerlikon.ch"
     },/*
 	{
@@ -68,7 +68,7 @@ function initMap() {
       position: new google.maps.LatLng(47.379170731925306, 8.544534830022993),
       type: "distributor",
 	  name: "Kleine Freiheit",
-	  text: "Die Kleine Freiheit ist der perfekte Ort, um nach einem langen Tag an der Uni mit einer heissen Tasse Igor TURBORUSS die nächste Abgabefrist für ein paar Stunden auszublenden.",
+	  text: "Frustriert ab deiner Statistik Vorlesung (15:00 - 17:00, KOH-B-10)? Ab heute kannst du vom Vorlesungssaal direkt in die Kleine Freiheit spazieren, um bei einer heissen Tasse Igor TURBORUSS deine akademischen Sorgen für ein Stündchen auszublenden. <br><br> Mit diesem ersten Zürcher Verkaufsstandort gilt die Igor TURBORUSS Saison als offiziell eröffnet.",
 	  link: "https://kleinefreiheit.ch/"
     },
 	{
@@ -82,7 +82,7 @@ function initMap() {
       position: new google.maps.LatLng(47.37609990248077, 8.54672287389409),
       type: "seller_distributor",
 	  name: "bQm",
-	  text: "Bist du nach einer seeeeehr langen Uni-Woche (Mo-Do, 5 VL, 3 davon besucht) komplett ausgelaugt und brauchst etwas wohlig warmes?",
+	  text: "Bist du nach einer seeeeehr langen Uni-Woche (Mo-Do, 5 VL, 3 davon besucht) komplett ausgelaugt und brauchst etwas wohlig warmes um das Wochenende einzuläuten? <br><br> Wir verschaffen Abhilfe! Ab heute ist der Igor TURBORUSS im bQm unter der ETH Polyterrasse an der Bar erhältlich! <br><br> Zudem: Im bQm kannst du auch gleich für deinen nächsten WG-Abend [1, 2, ..., n] Flaschen Igor TURBORUSS erwerben :)",
 	  link: "https://www.bqm-bar.ch/de/"
     },
 	{
