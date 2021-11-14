@@ -84,7 +84,7 @@ function initMap() {
 	  name: "bQm",
 	  text: "Bist du nach einer seeeeehr langen Uni-Woche (Mo-Do, 5 VL, 3 davon besucht) komplett ausgelaugt und brauchst etwas wohlig warmes um das Wochenende einzuläuten? <br><br> Wir verschaffen Abhilfe! Ab heute ist der Igor TURBORUSS im bQm unter der ETH Polyterrasse an der Bar erhältlich! <br><br> Zudem: Im bQm kannst du auch gleich für deinen nächsten WG-Abend [1, 2, ..., n] Flaschen Igor TURBORUSS erwerben :)",
 	  link: "https://www.bqm-bar.ch/de/"
-    },
+    },/*
 	{
       position: new google.maps.LatLng(47.37274151062592, 8.543627342936118),
       type: "seller",
