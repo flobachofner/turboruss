@@ -58,12 +58,14 @@ function initMap() {
       type: "seller",
 	  name: "Drinks of the World Oerlikon",
 	  scaledSize: new google.maps.Size(10, 10),
-    },
-    {
-      position: new google.maps.LatLng(47.369608, 8.5442944),
-      type: "seller_distributor",
-	  name: "Karl der Grosse",
     },*/
+    {
+      position: new google.maps.LatLng(47.369710564499606, 8.544566311719064),
+      type: "distributor",
+	  name: "Karl der Grosse",
+	  text: "Du hast nach 4 Stunden Weihnachtseinkauf im Niederdörfli alle wichtigen Geschenke gefunden, dir ist nun zwar ganz warm ums Herz aber du hast eiskalte Finger? <br><br>Dann geh schnell ins Karl der Grosse, denn dort bekommst du seit neustem eine heisse Tasse Igor TURBORUSS.",
+	  link: "https://karldergrosse.ch/"
+    },
 	{
       position: new google.maps.LatLng(47.379170731925306, 8.544534830022993),
       type: "distributor",
