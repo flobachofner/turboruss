@@ -59,6 +59,13 @@ function initMap() {
 	  name: "Drinks of the World Oerlikon",
 	  scaledSize: new google.maps.Size(10, 10),
     },*/
+	{
+      position: new google.maps.LatLng(47.38734391817556, 8.530356835427366),
+      type: "distributor",
+	  name: "Resonance Jams im Planet 5",
+	  text: "Ziemlich jeden Donnerstag treffen sich an der Limmat in einer gemütlichen und lockeren Atmosphäre um zu jammen, zu quatschen und um zuzuhören. Neu mit dabei: Igor TURBORUSS!",
+	  link: "https://www.resonancejams.ch/"
+    },
     {
       position: new google.maps.LatLng(47.369710564499606, 8.544566311719064),
       type: "distributor",
