@@ -93,20 +93,28 @@ function initMap() {
 	  name: "bQm",
 	  text: "Bist du nach einer seeeeehr langen Uni-Woche (Mo-Do, 5 VL, 3 davon besucht) komplett ausgelaugt und brauchst etwas wohlig warmes um das Wochenende einzuläuten? <br><br> Wir verschaffen Abhilfe! Ab heute ist der Igor TURBORUSS im bQm unter der ETH Polyterrasse an der Bar erhältlich! <br><br> Zudem: Im bQm kannst du auch gleich für deinen nächsten WG-Abend [1, 2, ..., n] Flaschen Igor TURBORUSS erwerben :)",
 	  link: "https://www.bqm-bar.ch/de/"
-    },/*
+    },
 	{
       position: new google.maps.LatLng(47.37274151062592, 8.543627342936118),
       type: "seller",
-	  name: "Berg und Tal",
+	  name: "Berg und Tal im Niederdorf",
 	  text: "Suchst du lokale Spezialitäten<br>Oder neue kulinarische Raritäten<br>Ist das Lädeli Berg und Tal<br>Logischerweise die erste Wahl<br><br>Und dort kannst du nun ganz neu<br>Kaufen unser Wintergebräu<br>Nein, es ist nicht Kafi mit Schuss<br>Sondern Igor TURBORUSS!",
 	  link: "https://www.berg-tal.ch/"
-    },/*
+    },
 	{
-      position: new google.maps.LatLng(47.4981776, 8.7292063),
+      position: new google.maps.LatLng(47.387870127568625, 8.526483829478202),
+      type: "seller",
+	  name: "Berg und Tal im Viadukt",
+	  text: "Suchst du lokale Spezialitäten<br>Oder neue kulinarische Raritäten<br>Ist das Lädeli Berg und Tal<br>Logischerweise die erste Wahl<br><br>Und dort kannst du nun ganz neu<br>Kaufen unser Wintergebräu<br>Nein, es ist nicht Kafi mit Schuss<br>Sondern Igor TURBORUSS!",
+	  link: "https://www.berg-tal.ch/"
+    },
+	{
+      position: new google.maps.LatLng(47.498169777917255, 8.731396609513409),
       type: "distributor",
 	  name: "Zum hinteren Hecht",
-	  scaledSize: new google.maps.Size(10, 10),
-    },*/
+	  text: "Unser Standort in Winterthur!",
+	  link: "https://zumhinterenhecht.ch"
+    },
   ];
 
   // Create markers
