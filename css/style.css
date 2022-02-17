@@ -82,13 +82,13 @@ i {
 	padding-bottom: 20px;
 }
 
-.card {
+.ig-card {
   background-color: #EDE3D9;
   color: white;
   padding: 1rem;
 }
 
-.cards {
+.ig-cards {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
