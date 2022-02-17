@@ -77,6 +77,24 @@ i {
 	transform: scale(1.2);
 }
 
+/* Card */
+#callToAction {
+	padding-bottom: 20px;
+}
+
+.card {
+  background-color: #EDE3D9;
+  color: white;
+  padding: 1rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 /* Socials */
 .socials_wrapper {
