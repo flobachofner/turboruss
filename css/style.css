@@ -83,19 +83,26 @@ i {
 }
 
 .ig-card {
-  background-color: #EDE3D9;
   color: white;
   padding: 1rem;
+  height: auto;
+  max-width: 250px;
 }
 
 .ig-cards {
-  	max-width: 1200px;
-  	margin: 0 auto;
-  	display: grid;
-  	grid-gap: 2rem;
-  	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-auto-rows: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
  }
+ 
+ @media (min-width: 750px) {
+  .ig-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .ig-cards { grid-template-columns: repeat(4, 1fr); }
+}
 
 .instagram-media {
   max-width: 100%;
