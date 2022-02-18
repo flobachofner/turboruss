@@ -101,7 +101,7 @@ i {
 }
 
 @media (min-width: 1200px) {
-  .ig-cards { grid-template-columns: repeat(4, 1fr); }
+  .ig-cards { grid-template-columns: repeat(3, 1fr); }
 }
 
 .instagram-media {
